@@ -449,3 +449,110 @@ a, .btn {
     font-size: .9rem;
     margin-left: 10px;
 }
+.menu-container {
+    margin: 5% auto;
+    background-image: url("https://preview.colorlib.com/theme/pato/images/icons/pattern2.png.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.menu-intro {
+    padding: 5%;
+}
+
+.menu-intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1%;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+}
+
+.menu-items,
+.top-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.menu-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease-in-out;
+}
+
+.menu-img:hover img {
+    transform: scale(1.1);
+    transition: transform .8s ease-in-out;
+}
+
+
+.menu-img .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.menu-img .btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all .7s ease-in-out;
+}
+
+/* Mobile first: stack menu items vertically */
+@media (max-width: 992px) {
+    .menu-items {
+        flex-direction: column;
+    }
+
+    .top-side {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-img {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+}
+
+/* Tablet: Two columns instead of one */
+@media (min-width: 768px) and (max-width: 992px) {
+    .menu-items {
+        flex-direction: row;
+    }
+
+    .left-block,
+    .right-block {
+        flex: 1 1 50%;
+    }
+}
+
+/* Large screens: keep your original layout */
+@media (min-width: 1200px) {
+    .menu-items {
+        flex-direction: row;
+    }
+}

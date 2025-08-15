@@ -376,3 +376,18 @@ a, .btn {
 .welcome-img img:hover {
     transform: scale(1.1);
 }
+
+.discover-container {
+    margin: 5%;
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}

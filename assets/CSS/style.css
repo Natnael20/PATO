@@ -20,6 +20,7 @@
     margin: 0;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
@@ -390,4 +391,61 @@ a, .btn {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; 
+}
+
+.explore-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.explore-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform .8s ease-in-out;
+}
+
+.explore-img img:hover {
+    transform: scale(1.2);
+}
+
+.explore-info {
+    line-height: 3;
+}
+
+.explore-info > p {
+    line-height: 1.6;
+    opacity: .6;
+}
+
+.explore-info h4 {
+    transition: color .8s ease-in-out;
+}
+
+.explore-info h4:hover {
+    color: var(--primary);
+    transition: color .8s ease-in-out;
+    cursor: pointer;
+}
+
+.right-link {
+    color: #222222;
+    font-weight: 400;
+    font-family:'Montserrat' , sans-serif;
+    text-decoration: none;
+    text-align: center;
+    font-size: .9rem;
+    transition: all .8s linear;
+}
+
+.right-link:hover {
+    color: var(--primary);
+    transition: all .8s linear;
+}
+
+.right-link i {
+    font-size: .9rem;
+    margin-left: 10px;
 }

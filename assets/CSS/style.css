@@ -313,3 +313,66 @@ a, .btn {
     background-color: var(--time);
     color: var(--white);
 }
+
+/**************************Welcome container*************************************/
+
+.welcome-container {
+    margin-top: 5%;
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-info { 
+    text-align: center; 
+    line-height: 4;
+}
+.welcome-info p { 
+    line-height: 1.5;
+    opacity: .7;
+ }
+
+.welcome-info a {
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-size: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all .7s ease-in-out;
+}
+
+.welcome-info a:hover {
+    color: var(--primary);
+    border-radius: 5px;
+    transition: all .7s ease-in-out;
+}
+
+.welcome-info a > i {
+    font-size: .9rem;
+    margin-left: 10px;
+}
+
+.welcome-img {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.welcome-img img {
+    width: 100%; /* Fill container instead of 80% inside */
+    height: auto;
+    object-fit: cover;
+    transition: transform .8s ease-in-out;
+    display: block; /* Removes inline gaps */
+}
+
+.welcome-img img:hover {
+    transform: scale(1.1);
+}

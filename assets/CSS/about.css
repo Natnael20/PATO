@@ -58,3 +58,42 @@
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+.recipe-container {
+    margin-top: 5%;
+}
+
+.recipe-intro h1 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.recipe-intro p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--secondary);
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.recipe-img img {
+    width: 100%;
+    height: auto;
+    transition: transform .8s ease;
+}
+
+.recipe-img:hover img {
+    transform: scale(1.1);
+    transition: transform .8s ease;
+}

@@ -940,3 +940,77 @@ iframe {
     border: none;
     border-radius: 0;
 }
+
+.blog-container {
+    margin-top: 5%;
+}
+
+.blog-title h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1%;
+    letter-spacing: 15px;
+    word-spacing: 5px;
+    transition: color .8s ease-in-out;
+}
+
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-img.blog-1::before {
+    content: '21 Dec 2017';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-img.blog-2::before {
+    content: '15 Dec 2017';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-img.blog-3::before {
+    content: '12 Dec 2017';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s ease-in-out;
+}
+
+.blog-img img:hover {
+    transform: scale(1.1);
+}
+
+.blog-info h4:hover {
+    color: var(--primary);
+    transition: color .8s ease-in-out;
+}

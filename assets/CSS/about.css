@@ -41,3 +41,20 @@
         height: 70vh;
     }
 }
+
+.story-container {
+    margin: 5% auto;
+}
+
+.story-info {
+    width: 70%;
+    margin: 3% auto;
+}
+
+.story-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

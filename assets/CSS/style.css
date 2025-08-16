@@ -863,3 +863,80 @@ a, .btn {
 .booking-img:hover img {
     transform: scale(1.1);
 }
+
+.video-container {
+    margin-top: 15%;
+    cursor: pointer;
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Adjust height as needed */
+}
+.video-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent overlay */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.video-title h1{
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: 3rem;
+}
+.play-btn {
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--white);
+    border: none;
+    border-radius: 50%;
+    padding: 16px 25px;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+}
+.play-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transition: all .7s ease-in-out;
+}
+.video-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.video-content {
+    position: relative;
+    max-width: 90vw; /* 90% of viewport width */
+
+}
+.close-btn {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+iframe {
+    width: 50vw;
+    height: 50vh;
+    border: none;
+    border-radius: 0;
+}

@@ -349,6 +349,71 @@
                 </div>
             </div>
         </div>
+
+        <!--mini reservation-->
+        <div class="container-fluid reservation-container">
+            <div class="container reservation-content">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mt-5">
+                        <div class="reserv-intro text-center">
+                            <span class="title-1">Reservation</span>
+                            <h1>Book Table</h1>
+                        </div>
+                        <form class="reservation-form mt-5" action="#" method="POST">
+                            <div class="input-group">
+
+                                <div class="form-group">
+                                    <label for="date">Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                        
+                            <div class="input-group">
+                                <div class="form-group">
+                                    <label for="time">Time</label>
+                                    <select id="time" name="time" required>
+                                        <option value="" disabled selected>Select a time</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="10:30">10:30 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="11:30">11:30 AM</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                                </div>
+                            </div>
+                        
+                            <div class="input-group">
+                                <div class="form-group">
+                                    <label for="people">Number of People</label>
+                                    <input type="number" id="people" name="people" placeholder="Guests" min="1" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        
+                            <button type="submit" class="btn reserv-button mt-5">Book Now</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mt-5">
+                        <div class="booking-img">
+                            <img src="https://preview.colorlib.com/theme/pato/images/booking-01.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>

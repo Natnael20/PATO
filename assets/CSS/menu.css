@@ -97,3 +97,73 @@ main.main-container {
     line-height: 1.2;
     text-transform: uppercase;
 }
+
+div.lunch-container {
+    margin-top: 5%;
+    background-image: url("https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.lunch-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.lunch-content h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+}
+
+.lunch {
+    display: flex;
+    flex-direction: column;
+}
+
+.lunch-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lunch-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 200px;
+}
+
+.lunch-img img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.lunch-img img:hover {
+    transform: scale(1.1);
+}
+
+.lunch-info {
+    flex: 1;
+    /* ensures info aligns consistently */
+}

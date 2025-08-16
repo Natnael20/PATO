@@ -41,3 +41,59 @@
         height: 70vh;
     }
 }
+
+main.main-container {
+    margin-top: 5%;
+}
+
+.starters-menu h3, .drinking-menu h3, .main-menu h3, .dessert-menu h3 {
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: var(--secondary);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+
+.menu-name a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--secondary);
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all .9s ease-in-out;
+}
+
+.menu-name a:hover {
+    color: var(--primary);
+    transition: all .9s ease-in-out;
+}
+
+.menu-name p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #666666;
+    line-height: 1.7;
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--secondary);
+    line-height: 1.2;
+    text-transform: uppercase;
+}

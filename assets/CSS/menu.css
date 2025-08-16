@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #d61c22;
+    --secondary: #333333;
+    --time: #ec1d25;
+    --black: #000;
+    --white: #fff;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-header {
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-title-page-01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-intro h1 {
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1280px) {
+    .menu-header {
+        height: 70vh;
+    }
+}

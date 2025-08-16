@@ -380,19 +380,20 @@ a, .btn {
 }
 
 .discover-container {
-    margin: 5%;
+    margin: 0; /* remove margins */
+    padding: 5%; /* optional padding inside */
     background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 50vh;
-    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; 
+    width: 100%; /* make full width */
 }
+
 
 .explore-img {
     position: relative;
@@ -770,8 +771,14 @@ a, .btn {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 100vh;
     padding: 5%;
+}
+
+@media (min-width: 1280px) {
+    .reservation-container {
+        height: auto;
+    }
 }
 
 .input-group {
@@ -866,7 +873,7 @@ a, .btn {
 }
 
 .video-container {
-    margin-top: 15%;
+    margin-top: 5%;
     cursor: pointer;
     background-image: url("https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg");
     background-size: cover;

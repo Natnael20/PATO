@@ -160,3 +160,99 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.team-container {
+    margin: 5% auto;
+}
+
+.team-intro h1 {
+    color: var(--secondary);
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    height: 60vh;
+    margin: 4% auto;
+    position: relative;
+}
+
+@media (min-width: 1280px) {
+    .card {
+        max-width: 90%;
+        height: 40vh;
+    }
+}
+
+.card-img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid var(--primary); /* move border here */
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.8s ease;
+    display: block;
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+}
+
+.card-name {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-name a {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.8s ease;    
+}
+
+.card-name a:hover {
+    color: var(--primary);
+    transition: color 0.8s ease;    
+}
+
+.card-name span {
+    color: var(--secondary);
+    font-size: .8rem;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.card-info {
+    position: relative;
+    top: 120px;
+}
+
+.card-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

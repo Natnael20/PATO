@@ -1014,3 +1014,47 @@ iframe {
     color: var(--primary);
     transition: color .8s ease-in-out;
 }
+
+.footer-container {
+    margin-top: 10%;
+    height: 80vh;
+}
+
+.contact-section a {
+    display: block;
+    line-height: 2;
+    word-spacing: 2px;
+    color: var(--black);
+}
+
+.twitter-date {
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    opacity: .5;
+}
+
+.grid-img {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    flex-wrap: wrap;
+}
+
+.footer-down {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-media a i{
+    color: var(--black);
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all .5s ease-in-out;
+}
+
+.footer-media a i:hover{
+    color:var(--primary);
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+}

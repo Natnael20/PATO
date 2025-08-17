@@ -119,3 +119,32 @@
 .img-zoom:hover img {
     transform: scale(1.1);
 }
+
+.breadcrumb-container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.page a {
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: var(--secondary);
+    transition: background 1s linear;
+}
+
+.page a:hover {
+    background: var(--black);
+    color: var(--white);
+    transition: background 1s linear;
+}

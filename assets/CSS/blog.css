@@ -42,3 +42,29 @@
     }
 }
 
+.breadcrumb ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb ul li {
+    margin: 0 10px;
+}
+
+
+.breadcrumb ul li a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: .8rem;
+    transition: opacity .3s ease;
+    position: relative;
+    padding: 0 5px;
+}
+
+.breadcrumb ul li:last-child a {
+    opacity: .4;
+}

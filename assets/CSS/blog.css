@@ -16,3 +16,29 @@
     margin: 0;
 }
 
+.main-blog {
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-title-page-03.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-intro h1 {
+    color: var(--white);
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1280px) {
+    .main-blog {
+        height: 70vh;
+    }
+}
+

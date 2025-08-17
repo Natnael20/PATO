@@ -57,3 +57,123 @@
     height: 400px;
 }
 
+.form-container {
+    margin-top: 6%;
+}
+
+.input-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-section form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    /* space between inputs */
+}
+
+.input-section form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .input-section form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 100%;
+        width:100%;
+    }
+
+    .input-section input,
+    .text-area textarea {
+        width: auto; /* take full width in mobile */
+    }
+}
+
+.input-section input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder style */
+.input-section input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Hover effect */
+.input-section input:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus effect */
+.input-section input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.input-section input,.text-area textarea {
+    width: 60%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder style */
+.input-section input::placeholder,
+.text-area textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Focus state */
+.input-section input:focus,
+.text-area textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+
+/* Optional: give textarea more vertical breathing room */
+.text-area textarea {
+    min-height: 150px;
+    line-height: 1.6;
+}
+
+.submit-button {
+    margin-top: 2% !important;
+    width: 10% !important;
+    letter-spacing: 1px !important;
+    border-radius: 10px !important;
+    display: block !important;   /* makes width apply */
+    text-align: center;         /* centers text */
+    font-weight: 400;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .submit-button {
+        width: auto !important;  /* full width */
+    }
+}

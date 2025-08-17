@@ -177,3 +177,52 @@
         width: auto !important;  /* full width */
     }
 }
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.pato-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* optional spacing between items */
+}
+
+@media (max-width: 768px) {
+    .pato-info {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.pato-info>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.location-icon i,
+.phone-icon i,
+.hour-icon i {
+    font-size: 1.3rem;
+    margin-top: 10%;
+}
+
+.location-info h5,
+.phone-info h5,
+.hour-info h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.phone-info a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.hour-info p {
+    line-height: .6;
+    margin-top: 7%;
+}

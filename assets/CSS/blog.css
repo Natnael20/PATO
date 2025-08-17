@@ -128,3 +128,102 @@
     color: #666666;
     margin: 2% auto;
 }
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #666666;
+    font-size: 1rem;
+}
+
+.search-form a {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color .8s ease;
+}
+
+.search-form a i:hover {
+    color: var(--primary);
+    transition: color .8s ease;
+}
+
+.category-section {
+    margin-top: 15vh;
+}
+
+.list-group {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.list-group li {
+    width: 100%;
+}
+
+.list-group li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: .8rem;
+    margin-bottom: 10px;
+    line-height: 2;
+    text-transform: uppercase;
+    transition: color .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.popular-container {
+    margin-top: 15vh;
+}
+
+.popular-container .popular {
+    display: flex;
+    gap: 10px;
+    margin-top: 5%;
+}
+
+.popular-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 80px;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.popular-info p {
+    font-size: 1rem;
+    color: var(--secondary);
+    opacity: .4;
+}
+
+.archive-section {
+    margin-top: 15vh;
+}
+.arch-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arch-link p {
+    font-size: 1rem;
+    color: var(--secondary);
+    opacity: .4;
+}

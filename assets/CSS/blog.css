@@ -68,3 +68,63 @@
 .breadcrumb ul li:last-child a {
     opacity: .4;
 }
+
+.blog-img {
+    border-radius: 30px;
+}
+.blog-date {
+    position: absolute;
+    background-color: var(--primary);
+    top: 10px;
+    left: 20px;
+    text-align: center;
+    color: var(--white);
+    line-height: .8;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.blog-date h3 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.blog-date p {
+    font-size: .8rem;
+    font-weight: 300;
+}
+.blog-info h2 a {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    transition: color 1s ease;
+}
+
+.blog-info h2 a:hover {
+    color: var(--primary);
+    transition: color 1s ease;
+}
+
+.blog-info ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;    
+}
+
+.blog-info ul li {
+    margin: 0 10px;
+    opacity: .4;
+}
+
+.blog-info p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 2% auto;
+}

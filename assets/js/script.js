@@ -126,3 +126,13 @@ modal.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+function fixChromeVH() {
+  const isChrome = /Chrome/.test(navigator.userAgent) && !/Edg/.test(navigator.userAgent);
+  if (isChrome) {
+    document.querySelector(".reservation-container").style.height = window.innerHeight + "px";
+  }
+}
+
+fixChromeVH();
+window.addEventListener("resize", fixChromeVH);

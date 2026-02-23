@@ -382,12 +382,12 @@ a, .btn {
 .discover-container {
     margin: 0; /* remove margins */
     padding: 5%; /* optional padding inside */
-    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp");
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-intro-01.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ a, .btn {
 }
 .menu-container {
     margin: 5% auto;
-    background-image: url("https://preview.colorlib.com/theme/pato/images/icons/pattern2.png.webp");
+    background-image: url("https://preview.colorlib.com/theme/pato/images/icons/pattern2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -609,6 +609,20 @@ a, .btn {
     object-fit: cover;
 }
 
+
+.slider .slide:nth-child(2) {
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-event-04.webp");
+}
+
+.slider .slide:nth-child(3) {
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-event-01.webp");
+}
+
+.slider .slide:nth-child(4) {
+    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-event-02.webp");
+}
+
+
 .slide.active {
     opacity: 1;
     z-index: 1; /* keep slide visible but behind info */
@@ -681,7 +695,7 @@ a, .btn {
 
 @media (max-width: 768px) {
     .slide-img img, .slider {
-        height: 230vh;
+        height: 150vh;
     }
     .slide-info {
         display: block;

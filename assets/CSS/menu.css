@@ -100,7 +100,7 @@ main.main-container {
 
 div.lunch-container {
     margin-top: 5%;
-    background-image: url("https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg.webp");
+    background-image: url("https://preview.colorlib.com/theme/pato/images/header-menu-01.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -170,7 +170,7 @@ div.lunch-container {
 
 div.dinner-container {
     margin-top: 5%;
-    background-image: url("https://preview.colorlib.com/theme/pato/images/header-menu-02.jpg.webp");
+    background-image: url("https://preview.colorlib.com/theme/pato/images/header-menu-02.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

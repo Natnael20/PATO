@@ -695,7 +695,7 @@ a, .btn {
 
 @media (max-width: 768px) {
     .slide-img img, .slider {
-        height: 150vh;
+        height: 230vh;
     }
     .slide-info {
         display: block;

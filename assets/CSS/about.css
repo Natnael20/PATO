@@ -7,11 +7,9 @@
     max-height: 700px;
 }
 
-
-.story-container {
-    margin: 5%;
+.story-container, .recipe-container {
+    margin: 5% auto;
 }
-
 
 .story-info p {
     font-family: 'Montserrat', sans-serif;
@@ -19,10 +17,6 @@
     color: var(--secondary);
     line-height: 1.6;
     margin-bottom: 20px;
-}
-
-.recipe-container {
-    margin-top: 5%;
 }
 
 .recipe-intro h1 {
@@ -53,19 +47,15 @@
 }
 
 .restaurant-container {
-    margin: 5%;
+    margin-top: 5%;
 }
 
 .rest-img {
     position: relative;
     overflow: hidden;
-    width: 100%;
-    max-width: 500px;
 }
 
 .rest-img img {
-    width: 100%;
-    height: auto;
     transition: transform .8s ease;
 }
 
@@ -92,22 +82,13 @@
 
 .parallax-container {
     margin-top: 5%;
-    background-image: url("https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .5)), 
+    url("https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100svh;
-}
-
-.parallax-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .team-container {
@@ -122,53 +103,25 @@
     margin-bottom: 20px;
 }
 
-.card {
-    border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    padding: 70px 20px 20px 20px; 
-    text-align: center;
-    margin: 4% auto;
-    position: relative;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 1380px) {
-    .card {
-        max-width: 90%;
-    }
-}
 
 .card-img {
-    position: absolute;
     top: -50px; 
-    left: 50%;
-    transform: translateX(-50%);
     width: 130px;
     height: 130px;
-    overflow: hidden;
-    border-radius: 50%;
     border: 3px solid var(--primary);
 }
 
 .card-img img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
     transition: transform 0.8s ease;
-    display: block;
 }
 
 .card-img:hover img {
     transform: scale(1.1);
-}
-
-.card-name {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
 }
 
 .card-name a {

@@ -589,10 +589,10 @@ a, .btn {
 
 .slider {
     width: 100%;
-    height: 500px;
+    height: 600px;
+    min-width: 350px;
     overflow: hidden;
     position: relative;
-    min-width: 350px;
 }
 
  @media (min-width: 1280px) {
@@ -705,7 +705,7 @@ a, .btn {
 
 .slide-info {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -718,17 +718,15 @@ a, .btn {
 }
 
 @media (max-width: 768px) {
-    .slide-img img, .slider {
-        height: 230vh;
+    .slider {
+        height: 180vh;
     }
     .slide-info {
         display: block;
-        width: 100%; /* Full width for mobile */
-        height: auto; /* Let height adjust to content */
-        padding: 15px;
-        background: var(--white); /* Keep text readable */
-        color: #222; /* Override white text */
-        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        background: var(--white);
     }
 }
 
